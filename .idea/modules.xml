@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Array/Array.iml" filepath="$PROJECT_DIR$/Array/Array.iml" />
       <module fileurl="file://$PROJECT_DIR$/Data-Structures-And-Algorithms.iml" filepath="$PROJECT_DIR$/Data-Structures-And-Algorithms.iml" />
       <module fileurl="file://$PROJECT_DIR$/Questions/Questions.iml" filepath="$PROJECT_DIR$/Questions/Questions.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaQuestions/javaQuestions.iml" filepath="$PROJECT_DIR$/javaQuestions/javaQuestions.iml" />
