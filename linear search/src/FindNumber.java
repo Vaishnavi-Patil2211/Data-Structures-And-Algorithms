@@ -4,21 +4,18 @@ public class FindNumber {
         int target=45;
         int ans=linearsearch(nums,target);
         System.out.println(ans);
-
     }
-
     //search in the array:return the index if items found
     //otherwise the item not found return -1
     static int linearsearch(int[] arr,int target){
         if (arr.length==0){
             return -1;
         }
-
         //run a for loop
         for(int i =0; i<arr.length;i++){
         //check for element at every index if it is = target
         int element = arr[i];
-        if(element== target){
+        if(element == target){
             return i;
         }
         }
