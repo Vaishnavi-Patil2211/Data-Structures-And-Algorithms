@@ -1,8 +1,9 @@
-public class Ciling {
+public class Celing {
+
         public static void main(String[] args) {
             int[] arr = {2,4,6,8,10,12,14,16,18,20};
             int target = 11;
-            int ans = binarysearch(arr, target);
+            int ans = binarysearch(arr,1 target);
             System.out.println(ans);
         }
         static int binarysearch(int[] arr, int target) {
@@ -26,5 +27,7 @@ public class Ciling {
             return start;
         }
     }
+
+
 
 
