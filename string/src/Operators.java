@@ -8,5 +8,9 @@ public class Operators {
         System.out.println((char)('a'+3));
         System.out.println("a"+1);
         System.out.println("kunal"+new ArrayList<>());
+
+        System.out.println("kunal" + new Integer(56));
+        String ans = new Integer(56) +" "+ new ArrayList<>();
+        System.out.println(ans);
     }
 }

@@ -8,3 +8,4 @@ public class String {
         System.out.println(word.charAt(0));
     }
 }
+
