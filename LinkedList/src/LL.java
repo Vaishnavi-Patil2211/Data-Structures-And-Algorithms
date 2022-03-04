@@ -1,57 +1,99 @@
 public class LL {
 
-    private Node head;
-    private Node tail;
-    private int size;
+    Node head;
+    Node tail;
+    int size;
 
-    public LL() {
-        this.size = 0;
+    public LL(){
+        this.size=0;
     }
 
-    public void insertFirst(int val) {      // insert node at first
-        Node node = new Node(val);
-        node.next = head;
-        head = node;
+    public void insertFirst(int value){
+        Node node = new Node(value);
 
-        if (tail == null) {
-            tail = head;
+        node.next=head;
+        head=node;
+
+        if(tail==null){
+            tail=head;
         }
-        size += 1;
+        size++;
+
     }
 
-    public void insertLast(int val) {       // insert node at last
-        if (tail == null) {
-            insertFirst(val);
+    public void insertLast(int value){
+        if(tail==null){
+            insertFirst(value);
+            return;
+        }
+        Node node=new Node(value);
+        tail.next=node;
+        tail=node;
+
+        size++;
+    }
+
+    public void insert(int value,int index ){
+        if(index==0){
+            insertFirst(value);
             return;
         }
 
-        Node node = new Node(val);
-        tail.next = node;
-        tail = node;
+        if(index==size){
+            insertLast(value);
+            return;
+        }
+
+        Node temp = head;
+        for (int i = 1; i < index; i++) {
+            temp=temp.next;
+
+        }
+
+        Node node = new Node(value,temp.next);
+        temp.next=node;
+        size++;
+    }
+
+
+    public void insertLast2(int value){
+        Node node = new Node(value);
+        if(head==null){
+            head=node;
+            return;
+        }
+        Node temp = head;
+        while(temp.next != null){
+            temp= temp.next;
+        }
+        temp.next = node;
+        node.next = null;
         size++;
     }
 
 
 
-    public void display() {
-        Node temp = head;
-        while (temp != null) {
+
+    public void display(){
+        Node temp=head;
+        while(temp != null){
             System.out.print(temp.value + "->");
-            temp = temp.next;
-
+            temp=temp.next;
         }
-        System.out.println("END");
+        System.out.println("end");
     }
 
-    private class Node {            // creating a node
-        private int value;
-        private Node next;
+    private class Node{
+        int value;
+        Node next;
 
-        public Node(int value) {
-            this.value = value;
+        public Node(int value){
+            this.value=value;
         }
 
-
+        public Node(int value,Node next){
+            this.value=value;
+            this.next=next;
+        }
     }
-
 }
