@@ -8,6 +8,9 @@ public class Main {
         list.insertLast(1);
         list.insert(61,1);
         list.insertLast2(5);
+        list.deleteFirst();
+        list.deleteLast();
+        list.delete(3);
         list.display();
     }
 }
