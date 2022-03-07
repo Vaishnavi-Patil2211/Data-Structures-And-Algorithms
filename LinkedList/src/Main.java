@@ -1,6 +1,13 @@
 public class Main {
     public static void main(String[] args) {
         LL list = new LL();
+        DLL dl = new DLL();
+        dl.insertFirst(5);
+        dl.insertFirst(6);
+        dl.insertFirst(10);
+
+        dl.insertLast(100);
+
 
         list.insertFirst(12);
         list.insertFirst(3);
