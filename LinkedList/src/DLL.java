@@ -24,7 +24,7 @@ public class DLL {
         }
         node.next = null;
 
-        Node last = head;
+        Node last = head;   //we store head in last
         while (last.next != null){
             last = last.next;
         }
@@ -35,7 +35,7 @@ public class DLL {
 
 
     public void insert(int after, int val){
-        Node p = find(after);
+        Node p = find(after);   //
 
         if (p == null){
             System.out.println("does not exist");
