@@ -1,13 +1,13 @@
 public class Main {
     public static void main(String[] args) {
 //        LL list = new LL();
-//        DLL dl = new DLL();
-//        dl.insertFirst(5);
-//        dl.insertFirst(6);
-//        dl.insertFirst(10);
-//
-//        dl.insertLast(100);
-//
+        DLL dl = new DLL();
+        dl.insertFirst(5);
+        dl.insertFirst(6);
+        dl.insertFirst(10);
+
+        dl.insertLast(100);
+
 //
 //        list.insertFirst(12);
 //        list.insertFirst(3);
@@ -18,12 +18,12 @@ public class Main {
 //        list.deleteFirst();
 //        list.deleteLast();
 //        list.delete(3);
-        CLL cl = new CLL();
-        cl.insert(5);
-        cl.insert(6);
-        cl.addafter(3,5);
-        cl.delete(5);
+//        CLL cl = new CLL();
+//        cl.insert(5);
+//        cl.insert(6);
+//        cl.addafter(3,5);
+//        cl.delete(5);
 
-        cl.display();
+        dl.display();
     }
 }

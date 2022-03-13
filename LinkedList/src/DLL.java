@@ -71,6 +71,13 @@ public class DLL {
             temp = temp.next;
         }
         System.out.println("NULL");
+//        System.out.println("print in reverse");
+//        while(last !=null){
+//            System.out.print(last.value + "->");
+//            last=last.prev;
+//        }
+
+//        System.out.println("start");
     }
 
     static class Node{
