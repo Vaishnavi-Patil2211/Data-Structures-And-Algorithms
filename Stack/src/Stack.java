@@ -1,73 +1,62 @@
-class Stack {
-    int MAX = 101;
+class stack{
+    int MAX=100;
+    int[] a= new int[MAX];
     int top;
-    int a[] = new int[MAX];
-
-
-    Stack(){
-        top = -1;
+    stack(){
+        top=-1;
     }
 
-    void push(int x) {
-        if (top >= (MAX - 1)) {
-            System.out.println("Stack Overflow");
+    void push(int x){
+        if(top>=MAX-1){
+            System.out.println("stack over flow");
+        }else{
+            a[++top]=x;
         }
-        else {
-            a[++top] = x;
 
-        }
     }
 
-    void pop() {
-        if(top == -1) {
-            System.out.println("Error: No element to pop");
-
+    void pop(){
+        if(top== -1){
+            System.out.println("no element to pop");
+        }else{
+            top--;
         }
-        top--;
+
     }
 
-    int Top() {
-        if (top < 0) {
-            System.out.println("Stack Underflow");
+    int top(){
+        if(top<0){
+            System.out.println("stack underflow");
             return 0;
-        }
-        else {
-            int x = a[top];
-            return x;
+        }else {
+            return a[top];
         }
     }
 
-    boolean isEmpty() {
-        return (top < 0);
+    boolean empty(){
+       return top<0;
     }
 
-    void Print(){
-        for(int i = 0;i<=top;i++){
-            System.out.print(" "+ a[i]);
+    void print(){
+        for(int i=0;i<top;i++){
+            System.out.print(a[1]);
+
         }
     }
 
-}
-
-class Main {
-    public static void main(String args[])
-    {
-        Stack S = new Stack();
-        S.push(2);S.Print();
-        System.out.println();
-
-        S.push(5);S.Print();
-        System.out.println();
-
-        S.push(10);S.Print();
-        System.out.println();
-
-        S.pop();S.Print();
-        System.out.println();
-
-        S.push(12);S.Print();
-        System.out.println();
-
+    public static void main(String[] args) {
+        stack a=new stack();
+        a.push(5);
+        a.print();
+        a.push(4);
+        a.print();
+        a.push(1);
+        a.print();
+        a.pop();
+        a.top();
+        a.print();
 
     }
+
+
 }
