@@ -1,6 +1,6 @@
 class StackAsLinkedList {
 
-    StackNode root;
+    StackNode top;
 
     static class StackNode {
         int data;
@@ -15,12 +15,12 @@ class StackAsLinkedList {
     {
         StackNode newNode = new StackNode(data);
 
-        if (root == null) {
-            root = newNode;
+        if (top == null) {
+            top = newNode;
         }
         else {
-            StackNode temp = root;
-            root = newNode;
+            StackNode temp = top;
+            top = newNode;
             newNode.next = temp;
         }
         System.out.println(data + " pushed to stack");
@@ -29,12 +29,12 @@ class StackAsLinkedList {
     public int pop()
     {
         int popped = Integer.MIN_VALUE;
-        if (root == null) {
+        if (top== null) {
             System.out.println("Stack is Empty");
         }
         else {
-            popped = root.data;
-            root = root.next;
+            popped = top.data;
+            top = top.next;
         }
         return popped;
     }
