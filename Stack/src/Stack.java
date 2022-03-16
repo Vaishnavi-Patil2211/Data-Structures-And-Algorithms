@@ -34,7 +34,7 @@ class stack{
     }
 
     boolean empty(){
-       return top<0;
+        return top<0;
     }
 
     void print(){

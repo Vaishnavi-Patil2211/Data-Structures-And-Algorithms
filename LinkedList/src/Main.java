@@ -8,7 +8,6 @@ public class Main {
 
         dl.insertLast(100);
 
-//
 //        list.insertFirst(12);
 //        list.insertFirst(3);
 //        list.insertLast(2);
@@ -18,11 +17,11 @@ public class Main {
 //        list.deleteFirst();
 //        list.deleteLast();
 //        list.delete(3);
-//        CLL cl = new CLL();
-//        cl.insert(5);
-//        cl.insert(6);
-//        cl.addafter(3,5);
-//        cl.delete(5);
+        CLL cl = new CLL();
+        cl.insert(5);
+        cl.insert(6);
+        cl.addafter(3,5);
+        cl.delete(5);
 
         dl.display();
     }
