@@ -6,7 +6,9 @@ class StackAsLinkedList {
         int data;
         StackNode next;
 
-        StackNode(int data) { this.data = data; }
+        StackNode(int data) {
+            this.data = data;
+        }
     }
 
 
