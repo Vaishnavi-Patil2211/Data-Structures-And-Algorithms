@@ -53,8 +53,7 @@ class StackAsLinkedList {
         sll.push(20);
         sll.push(30);
 
-        System.out.println(sll.pop()
-                + " popped from stack");
+        System.out.println(sll.pop() + " popped from stack");
 
 
     }
