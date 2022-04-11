@@ -55,7 +55,7 @@ public class Binarytree {
         System.out.println(root.data+"");
     }
     public static void levelorder(Node root){
-        if(root==null){
+        if(root == null){
             return;
         }
         Queue<Node> q=new LinkedList<>();
