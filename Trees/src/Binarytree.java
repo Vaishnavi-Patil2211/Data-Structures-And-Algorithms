@@ -88,10 +88,10 @@ public class Binarytree {
         int nodes[] ={1,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1};
         BinaryTree tree=new BinaryTree();
         Node root=tree.buildTree(nodes);
-       // System.out.println(root.data);
-        // preorder(root);
-        //inorder(root);
-       // postorder(root);
+        System.out.println(root.data);
+         preorder(root);
+        inorder(root);
+        postorder(root);
         levelorder(root);
     }
 }
