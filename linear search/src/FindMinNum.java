@@ -1,6 +1,6 @@
 public class FindMinNum {
     public static void main(String[] args) {
-        int[] arr = {2, 3, -455, 56, 65, 5, 43,};
+        int[] arr = {2, 3, -455, 56, 65, 5, 43,0};
         System.out.println(min(arr));
         System.out.println(max(arr));
     }
