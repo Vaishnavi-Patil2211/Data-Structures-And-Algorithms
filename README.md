@@ -6,6 +6,14 @@
 
 - [Table of Contents]()
 
+  ##### [C]()
+  - [Stack](C/Stack/)
+  - [Queue](C/Queue/)
+  - [Recursion](C/Recursion/)
+  - [LinkedList](C/LinkedList/)
+  - [Searching](C/Searching/)
+  - [Sorting](C/Sorting/)
+
   ##### [JAVA]()
 
   - [array](Java/Array/src/)
