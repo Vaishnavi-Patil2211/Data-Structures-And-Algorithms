@@ -1,62 +1,62 @@
-class stack{
-    int MAX=100;
-    int[] a= new int[MAX];
-    int top;
-    stack(){
-        top=-1;
+public class Stack {
+    private static final int MAX = 100;
+    private int[] array = new int[MAX];
+    private int top;
+
+    Stack() {
+        top = -1;
     }
 
-    void push(int x){
-        if(top>=MAX-1){
-            System.out.println("stack over flow");
-        }else{
-            a[++top]=x;
+    // Push an element onto the stack
+    public void push(int x) {
+        if (top >= MAX - 1) {
+            System.out.println("Stack overflow");
+        } else {
+            array[++top] = x;
         }
-
     }
 
-    void pop(){
-        if(top== -1){
-            System.out.println("no element to pop");
-        }else{
+    // Pop an element from the stack
+    public void pop() {
+        if (top == -1) {
+            System.out.println("No element to pop");
+        } else {
             top--;
         }
-
     }
 
-    int top(){
-        if(top<0){
-            System.out.println("stack underflow");
-            return 0;
-        }else {
-            return a[top];
+    // Return the top element of the stack
+    public int top() {
+        if (top < 0) {
+            System.out.println("Stack underflow");
+            return -1; // Changed return value to -1 to indicate an error
+        } else {
+            return array[top];
         }
     }
 
-    boolean empty(){
-        return top<0;
+    // Check if the stack is empty
+    public boolean isEmpty() {
+        return top < 0;
     }
 
-    void print(){
-        for(int i=0;i<top;i++){
-            System.out.print(a[1]);
-
+    // Print the elements in the stack
+    public void print() {
+        for (int i = 0; i <= top; i++) { // Change to i <= top
+            System.out.print(array[i] + " "); // Print the element at index i
         }
+        System.out.println(); // Add a newline after printing all elements
     }
 
     public static void main(String[] args) {
-        stack a=new stack();
-        a.push(5);
-        a.print();
-        a.push(4);
-        a.print();
-        a.push(1);
-        a.print();
-        a.pop();
-        a.top();
-        a.print();
-
+        Stack stack = new Stack();
+        stack.push(5);
+        stack.print();
+        stack.push(4);
+        stack.print();
+        stack.push(1);
+        stack.print();
+        stack.pop();
+        stack.print();
     }
-
-
 }
